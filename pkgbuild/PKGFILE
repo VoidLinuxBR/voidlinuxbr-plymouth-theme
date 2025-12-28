@@ -34,7 +34,7 @@ package() {
 post_install() {
 	defaultPlymouthTheme='voidlinuxbr'
 
-	# criar só se NÃO existir
+	echo "[*] $PKGNAME - Checando por /etc/dracut.conf.d/10-plymouth.conf"
 	if [ ! -f /etc/dracut.conf.d/10-plymouth.conf ]; then
 		cat >/etc/dracut.conf.d/10-plymouth.conf <<'EOF'
 # Enable Plymouth in initramfs
@@ -42,7 +42,7 @@ add_dracutmodules+=" plymouth "
 EOF
 	fi
 
-	# garantir que quiet e splash estejam presentes sem sobrescrever outros parâmetros
+  echo "[*] $PKGNAME - Garante que quiet e splash estejam presentes no /etc/defaulg/grub"
 	if grep -q '^GRUB_CMDLINE_LINUX_DEFAULT=' /etc/default/grub; then
 		grep -q 'quiet' /etc/default/grub ||
 			sed -i 's/^\(GRUB_CMDLINE_LINUX_DEFAULT=".*\)"/\1 quiet"/' /etc/default/grub
@@ -53,10 +53,12 @@ EOF
 		echo 'GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"' >>/etc/default/grub
 	fi
 
-	if ! plymouth-set-default-theme -R "$defaultPlymouthTheme"; then
+	echo "[*] $pkgname - Configurando $defaultPlymouthTheme no Plymouth"
+	if ! plymouth-set-default-theme "$defaultPlymouthTheme"; then
 		exit 1
 	fi
 
-	dracut -f
+  echo "[*] $PKGNAME - Criando initramfs"
+  dracut -f
 
 }
