@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- fundo -->
+  <rect width="512" height="512" fill="#000000"/>
+
+  <!-- arco Void externo -->
+  <path d="M256 40
+           A216 216 0 0 1 472 256"
+        fill="none"
+        stroke="#b7cdb7"
+        stroke-width="72"
+        stroke-linecap="butt"/>
+
+  <!-- arco Void interno -->
+  <path d="M256 96
+           A160 160 0 0 0 96 256"
+        fill="none"
+        stroke="#4f7f63"
+        stroke-width="72"
+        stroke-linecap="butt"/>
+
+  <!-- centro -->
+  <circle cx="256" cy="256" r="56" fill="#b7cdb7"/>
+
+  <!-- VOID -->
+  <text x="256" y="258"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-family="Ubuntu, DejaVu Sans, Liberation Sans, Arial, sans-serif"
+        font-size="128"
+        font-weight="900"
+        letter-spacing="4">
+    <tspan fill="#ffffff">V</tspan>
+    <tspan fill="#002776">O</tspan>
+    <tspan fill="#ffdf00">I</tspan>
+    <tspan fill="#009b3a">D</tspan>
+  </text>
+
+  <!-- pt_BR -->
+  <text x="256" y="360"
+        text-anchor="middle"
+        font-family="Ubuntu, DejaVu Sans, Liberation Sans, Arial, sans-serif"
+        font-size="44"
+        font-weight="900"
+        letter-spacing="1">
+    <tspan fill="#009b3a">p</tspan>
+    <tspan fill="#009b3a">t</tspan>
+    <tspan fill="#002776">_</tspan>
+    <tspan fill="#ffdf00">B</tspan>
+    <tspan fill="#ffdf00">R</tspan>
+  </text>
+
+  <!-- bandeira do Brasil (canto superior esquerdo) -->
+  <g transform="translate(20 20) scale(0.55)">
+    <rect x="0" y="0" width="80" height="56" rx="6" fill="#009b3a"/>
+    <polygon points="40,6 74,28 40,50 6,28" fill="#ffdf00"/>
+    <circle cx="40" cy="28" r="14" fill="#002776"/>
+  </g>
+</svg>

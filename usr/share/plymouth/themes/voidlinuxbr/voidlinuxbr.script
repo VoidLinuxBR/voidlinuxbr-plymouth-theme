@@ -1,0 +1,58 @@
+# -----------------------------------------
+# FUNDO
+# -----------------------------------------
+Window.SetBackgroundTopColor(0, 0, 0);
+Window.SetBackgroundBottomColor(0, 0, 0);
+
+# -----------------------------------------
+# IMAGENS
+# -----------------------------------------
+steps = [];
+steps[0] = Image("step1.png");
+steps[1] = Image("step2.png");
+steps[2] = Image("step3.png");
+steps[3] = Image("step4.png");
+
+sprite = Sprite();
+sprite.SetOpacity(1);
+
+# -----------------------------------------
+# POSIÇÃO CENTRAL
+# -----------------------------------------
+x = Window.GetWidth()  / 2 - steps[0].GetWidth()  / 2;
+y = Window.GetHeight() / 2 - steps[0].GetHeight() / 2;
+sprite.SetPosition(x, y, 0);
+
+# -----------------------------------------
+# CONTROLE DE ANIMAÇÃO
+# -----------------------------------------
+frame = 0;
+tick  = 0;
+
+fun refresh_callback() {
+
+  # controla tempo (quanto maior, mais lento)
+  if (tick < 15) {
+    tick++;
+    return;
+  }
+
+  tick = 0;
+
+  # avança imagens até a última
+  if (frame < 3) {
+    sprite.SetImage(steps[frame]);
+    frame++;
+  }
+}
+
+Plymouth.SetRefreshFunction(refresh_callback);
+
+# -----------------------------------------
+# QUIT
+# -----------------------------------------
+fun quit_callback() {
+  sprite.SetImage(steps[3]);
+}
+
+Plymouth.SetQuitFunction(quit_callback);

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 128">
+  <!-- símbolo da pimenta -->
+  <circle cx="64" cy="64" r="48" fill="#111111"/>
+
+  <!-- corpo da pimenta -->
+  <path d="M64 18
+           C46 18, 36 34, 36 50
+           C36 68, 50 86, 64 106
+           C78 86, 92 68, 92 50
+           C92 34, 82 18, 64 18 Z"
+        fill="#c4161c"/>
+
+  <!-- corte central (terminal / linux) -->
+  <path d="M64 30 L64 92"
+        stroke="#111111"
+        stroke-width="8"
+        stroke-linecap="round"/>
+
+  <!-- CABO da pimenta (verde) -->
+  <path d="M64 14
+           C64 6, 74 6, 78 12"
+        fill="none"
+        stroke="#2e7d32"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+  <!-- texto CHILI -->
+  <text x="128" y="78"
+        font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif"
+        font-size="42"
+        font-weight="700"
+        fill="#ffffff"
+        letter-spacing="2">
+    CHILI
+  </text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- base circular (flat, estilo Ubuntu) -->
+  <circle cx="128" cy="128" r="120" fill="#e95420"/>
+
+  <!-- sombra suave para destacar o personagem -->
+  <ellipse cx="128" cy="224" rx="46" ry="10" fill="#000000" opacity="0.15"/>
+
+  <!-- cabeça -->
+  <circle cx="128" cy="88" r="42" fill="#111111"/>
+
+  <!-- corpo -->
+  <ellipse cx="128" cy="156" rx="56" ry="68" fill="#111111"/>
+
+  <!-- barriga -->
+  <ellipse cx="128" cy="168" rx="34" ry="44" fill="#ffffff"/>
+
+  <!-- olhos (mais expressivos) -->
+  <circle cx="112" cy="86" r="7" fill="#ffffff"/>
+  <circle cx="144" cy="86" r="7" fill="#ffffff"/>
+  <circle cx="114" cy="88" r="3" fill="#111111"/>
+  <circle cx="146" cy="88" r="3" fill="#111111"/>
+  <circle cx="111" cy="84" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="143" cy="84" r="2" fill="#ffffff" opacity="0.8"/>
+
+  <!-- nariz de pimenta (mais integrado ao rosto) -->
+  <path d="M128 100
+           C168 104, 188 132, 156 150
+           C130 164, 116 140, 128 100 Z"
+        fill="#c4161c"/>
+
+  <!-- brilho sutil da pimenta -->
+  <path d="M138 110
+           C156 118, 164 134, 150 146"
+        fill="none"
+        stroke="#ef6b6b"
+        stroke-width="3"
+        stroke-linecap="round"/>
+
+  <!-- cabo verde -->
+  <path d="M130 96
+           C134 78, 164 78, 176 92"
+        fill="none"
+        stroke="#2e7d32"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
+  <!-- asas (mais orgânicas) -->
+  <path d="M70 142
+           C56 156, 56 184, 70 198
+           C78 206, 88 194, 84 176
+           C82 164, 80 150, 70 142 Z"
+        fill="#111111"/>
+
+  <path d="M186 142
+           C200 156, 200 184, 186 198
+           C178 206, 168 194, 172 176
+           C174 164, 176 150, 186 142 Z"
+        fill="#111111"/>
+
+  <!-- pés -->
+  <ellipse cx="104" cy="228" rx="16" ry="7" fill="#111111"/>
+  <ellipse cx="152" cy="228" rx="16" ry="7" fill="#111111"/>
+
+  <!-- texto CHILI -->
+  <text x="128" y="250"
+        text-anchor="middle"
+        font-family="Ubuntu, DejaVu Sans, Liberation Sans, Arial, sans-serif"
+        font-size="24"
+        font-weight="700"
+        fill="#ffffff"
+        letter-spacing="3">
+    CHILI
+  </text>
+</svg>

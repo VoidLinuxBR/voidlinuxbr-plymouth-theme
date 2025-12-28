@@ -1,0 +1,29 @@
+<!-- 2) ARCOS + VOID -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#000000"/>
+
+  <path d="M256 40
+           A216 216 0 0 1 472 256"
+        fill="none"
+        stroke="#b7cdb7"
+        stroke-width="72"/>
+
+  <path d="M256 96
+           A160 160 0 0 0 96 256"
+        fill="none"
+        stroke="#4f7f63"
+        stroke-width="72"/>
+
+  <text x="256" y="258"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-family="Ubuntu, DejaVu Sans, Liberation Sans, Arial, sans-serif"
+        font-size="128"
+        font-weight="900"
+        letter-spacing="4">
+    <tspan fill="#ffffff">V</tspan>
+    <tspan fill="#002776">O</tspan>
+    <tspan fill="#ffdf00">I</tspan>
+    <tspan fill="#009b3a">D</tspan>
+  </text>
+</svg>

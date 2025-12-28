@@ -1,0 +1,16 @@
+<!-- 1) somente os ARCOS -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#000000"/>
+
+  <path d="M256 40
+           A216 216 0 0 1 472 256"
+        fill="none"
+        stroke="#b7cdb7"
+        stroke-width="72"/>
+
+  <path d="M256 96
+           A160 160 0 0 0 96 256"
+        fill="none"
+        stroke="#4f7f63"
+        stroke-width="72"/>
+</svg>

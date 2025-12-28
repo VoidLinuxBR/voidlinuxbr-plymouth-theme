@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- corpo -->
+  <ellipse cx="128" cy="160" rx="70" ry="90" fill="#111"/>
+  <ellipse cx="128" cy="165" rx="45" ry="70" fill="#fff"/>
+
+  <!-- cabeça -->
+  <circle cx="128" cy="80" r="55" fill="#111"/>
+
+  <!-- olhos -->
+  <circle cx="110" cy="75" r="6" fill="#fff"/>
+  <circle cx="146" cy="75" r="6" fill="#fff"/>
+
+  <!-- bico-pimenta -->
+  <path d="M150 85 C200 90 205 115 150 120 Z" fill="#e10600"/>
+  <path d="M150 83 C155 70 170 70 175 78 Z" fill="#3aa635"/>
+</svg>

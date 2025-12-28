@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=VoidLinuxBr
+Description=VoidLinuxBR Plymouth Theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/voidlinuxbr
+ScriptFile=/usr/share/plymouth/themes/voidlinuxbr/voidlinuxbr.script
